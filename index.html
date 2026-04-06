@@ -3,125 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website - Red Theme</title>
+    <title>Red Project - Home</title>
     <style>
-        /* CSS RESET & BASE */
+        /* CSS UNTUK TEMA RED */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #1a0000; /* Hitam kemerahan agar mata nyaman */
-            color: white;
+            background-color: #1a0000; /* Hitam kemerahan agar elegan */
+            color: #ffffff;
             line-height: 1.6;
         }
 
-        /* NAVIGATION */
+        /* Navigasi */
         nav {
-            background-color: #ff0000;
+            background-color: #8B0000; /* Dark Red */
             padding: 1rem;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
             position: sticky;
             top: 0;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-            z-index: 1000;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            font-weight: bold;
             margin: 0 20px;
-            text-transform: uppercase;
+            font-weight: bold;
             transition: 0.3s;
         }
 
         nav a:hover {
-            color: #ffcccc;
-            text-shadow: 0 0 10px white;
+            color: #ff4d4d;
+            text-shadow: 0 0 10px #ff4d4d;
         }
 
-        /* HERO SECTION (BIODATA) */
+        /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(139, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), 
-                        url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2070&auto=format&fit=crop'); /* Gambar abstrak merah */
-            background-size: cover;
-            height: 60vh;
+            height: 80vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1541339907198-e08756ebafe3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); /* Gambar background bertema merah */
+            background-size: cover;
+            background-position: center;
+            border-bottom: 5px solid #ff0000;
         }
 
-        .profile-card {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 15px;
-            backdrop-filter: blur(5px);
-            border: 1px solid #ff0000;
-            max-width: 500px;
-        }
-
-        h1 {
-            font-size: 2.5rem;
+        .hero h1 {
+            font-size: 4rem;
             margin-bottom: 10px;
-            color: #ff4d4d;
+            color: #ff0000;
+            text-transform: uppercase;
+            letter-spacing: 5px;
         }
 
-        /* CONTAINER UMUM */
-        .container {
-            padding: 50px 20px;
-            max-width: 1000px;
-            margin: auto;
-            text-align: center;
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            color: #ccc;
         }
 
-        hr {
-            border: 1px solid #ff0000;
-            width: 50%;
-            margin: 20px auto;
+        /* Tombol Call to Action */
+        .btn {
+            margin-top: 25px;
+            padding: 12px 30px;
+            background-color: #ff0000;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.4s;
         }
 
+        .btn:hover {
+            background-color: white;
+            color: #ff0000;
+            box-shadow: 0 0 20px #ff0000;
+        }
+
+        /* Footer */
         footer {
-            background-color: #000;
-            padding: 20px;
             text-align: center;
+            padding: 2rem;
             font-size: 0.9rem;
-            border-top: 3px solid #ff0000;
+            color: #666;
         }
     </style>
 </head>
 <body>
 
     <nav>
-        <a href="index.html">Biodata</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="video.html">Video</a>
+        <a href="index.html">HOME</a>
+        <a href="biodata.html">BIODATA</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="video.html">VIDEO</a>
     </nav>
 
     <header class="hero">
-        <div class="profile-card">
-            <h1>BIODATA DIRI</h1>
-            <p>Selamat datang di website tugas saya.</p>
-            <hr>
-            <p><strong>Nama:</strong> [Isi Nama Kamu]</p>
-            <p><strong>NIM:</strong> [Isi NIM Kamu]</p>
-            <p><strong>Fakultas:</strong> Teknologi Informasi</p>
-            <p><strong>Motto:</strong> "Semangat Membara Seperti Warna Merah!"</p>
-        </div>
+        <h1>RED PROJECT</h1>
+        <p>Tugas Website Interaktif dengan Dominasi Warna Merah. Eksplorasi Desain Menggunakan HTML & CSS.</p>
+        <a href="biodata.html" class="btn">Kenali Saya Lebih Dekat</a>
     </header>
 
-    <div class="container">
-        <h2>Tentang Project Ini</h2>
-        <p>Website ini dikembangkan untuk memenuhi tugas mata kuliah dengan menggunakan GitHub Pages sebagai hosting. Tema warna merah dipilih untuk menunjukkan keberanian dan energi dalam berkarya.</p>
-    </div>
-
     <footer>
-        &copy; 2024 Created with ❤️ by [Nama Kamu]
+        &copy; 2024 - Tugas Web Design [Nama Kamu]
     </footer>
 
 </body>
