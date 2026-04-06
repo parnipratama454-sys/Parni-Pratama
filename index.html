@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website - Red Theme</title>
+    <style>
+        /* CSS RESET & BASE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a0000; /* Hitam kemerahan agar mata nyaman */
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background-color: #ff0000;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 20px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcccc;
+            text-shadow: 0 0 10px white;
+        }
+
+        /* HERO SECTION (BIODATA) */
+        .hero {
+            background: linear-gradient(rgba(139, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), 
+                        url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2070&auto=format&fit=crop'); /* Gambar abstrak merah */
+            background-size: cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .profile-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            border: 1px solid #ff0000;
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #ff4d4d;
+        }
+
+        /* CONTAINER UMUM */
+        .container {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
+        }
+
+        hr {
+            border: 1px solid #ff0000;
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        footer {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            border-top: 3px solid #ff0000;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Biodata</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="video.html">Video</a>
+    </nav>
+
+    <header class="hero">
+        <div class="profile-card">
+            <h1>BIODATA DIRI</h1>
+            <p>Selamat datang di website tugas saya.</p>
+            <hr>
+            <p><strong>Nama:</strong> [Isi Nama Kamu]</p>
+            <p><strong>NIM:</strong> [Isi NIM Kamu]</p>
+            <p><strong>Fakultas:</strong> Teknologi Informasi</p>
+            <p><strong>Motto:</strong> "Semangat Membara Seperti Warna Merah!"</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Tentang Project Ini</h2>
+        <p>Website ini dikembangkan untuk memenuhi tugas mata kuliah dengan menggunakan GitHub Pages sebagai hosting. Tema warna merah dipilih untuk menunjukkan keberanian dan energi dalam berkarya.</p>
+    </div>
+
+    <footer>
+        &copy; 2024 Created with ❤️ by [Nama Kamu]
+    </footer>
+
+</body>
+</html>
